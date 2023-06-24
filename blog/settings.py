@@ -135,13 +135,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'myblog/statics')]
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,  'statics')
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'https://movie-tsa-react-v4fx-gu4vot7tl-princetolu.vercel.app/',
-    'https://movie-tsa-react-v4fx-git-main-princetolu.vercel.app/',
-    'https://movie-tsa-react-v4fx-gu4vot7tl-princetolu.vercel.app/',
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:5173',
+#     'https://movie-tsa-react-v4fx-gu4vot7tl-princetolu.vercel.app/',
+#     'https://movie-tsa-react-v4fx-git-main-princetolu.vercel.app/',
+#     'https://movie-tsa-react-v4fx-gu4vot7tl-princetolu.vercel.app/',
     
-]
+# ]
+CORS_ALLOWED_ORIGINS = ['*']
 
 
 # Base url to serve media files
